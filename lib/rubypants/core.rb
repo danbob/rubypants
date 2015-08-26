@@ -284,7 +284,7 @@ class RubyPants < String
               entity(:single_left_quote))
 
     # Get most opening double quotes:
-    str.gsub!(/(\s|&nbsp;|--|&[mn]dash;|#{dec_dashes}|&#x201[34];)"(?=\w)/,
+    str.gsub!(/(\s|&nbsp;|--|&[mn]dash;|#{dec_dashes}|&#x201[34];|–|—)"(?=\w)/,
              '\1' + entity(:double_left_quote))
 
     # Double closing quotes:
